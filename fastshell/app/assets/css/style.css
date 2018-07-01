@@ -7,24 +7,6 @@
   .clear:after {
     clear: both; }
 
-* {
-  box-sizing: border-box;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
-
-html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
-
-body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
-  transition: all .4s .3s ease-in; }
-
-body, html {
-  min-height: 100vh;
-  overflow: hidden; }
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -386,9 +368,6 @@ th {
   top: 50%;
   left: 50%; }
 
-.nav ul {
-  list-style: none; }
-
 @font-face {
   font-family: 'Font-Name';
   src: url("../fonts/font-name.eot");
@@ -415,6 +394,71 @@ th {
   background: #333;
   color: #fff;
   text-shadow: none; }
+
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+body {
+  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+  color: #444;
+  transition: all .4s .3s ease-in;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; }
+
+body, html {
+  min-height: 100vh;
+  overflow: hidden; }
+
+/* FONT STACK */
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1600px; }
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 45px;
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif; }
+
+h1:after {
+  content: ' ';
+  display: block;
+  margin: 9px auto;
+  width: 100px; }
+
+h2 {
+  font-size: 2.2em;
+  font-family: "Open Sans Condensed", sans-serif; }
+
+h3 {
+  font-size: 2em; }
+
+h4 {
+  font-size: 1.75em; }
+
+h5 {
+  font-size: 1.5em; }
+
+h6 {
+  font-size: 1.25em; }
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none; }
+
+hr {
+  width: 100%;
+  border-top: solid 1px #ababab;
+  display: none; }
+
+/* ......Custom styles ................*/
+a {
+  cursor: pointer; }
 
 @media print {
   * {

@@ -17,7 +17,7 @@
 })(jQuery, window, document);
 
 (function ($) {
-  "use strict";
+  'use strict';
   $(document).ready(function () {
     $('#access').on('touchstart click', '.skip-link', function (event) {
       $(this).toggleClass('focus');

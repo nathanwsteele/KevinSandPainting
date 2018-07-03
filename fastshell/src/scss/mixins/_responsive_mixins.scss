@@ -1,0 +1,42 @@
+$phone-basis-width: 320px;
+$phone-width: 640px;
+
+$tablet-basis-width: 768px;
+$tablet-width: 768px;
+
+$desktop-basis-width: 1920px;
+
+@mixin convertToUnit($properties, $basis-width) {
+	@each $property, $values in $properties {
+		$newValues: ();
+
+		@each $value in $values {
+			@if type-of($value) == "number" and unit($value) == "px" {
+				$newValues: append($newValues, ($value/$basis-width) * 100vw);
+			} @else {
+				$newValues: append($newValues, $value);
+			}
+		}
+
+		#{$property}: $newValues;
+	}
+}
+
+@mixin desktop($properties: ()) {
+	@include convertToUnit($properties, $desktop-basis-width);
+	@content;
+}
+
+@mixin tablet($properties: ()) {
+	@media (max-width: $tablet-width) {
+		@include convertToUnit($properties, $tablet-basis-width);
+		@content;
+	}
+}
+
+@mixin phone($properties: ()) {
+	@media (max-width: $phone-width) {
+		@include convertToUnit($properties, $phone-basis-width);
+		@content;
+	}
+}

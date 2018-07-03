@@ -362,11 +362,56 @@ td,
 th {
   padding: 0; }
 
-.logo {
-  margin: -58px 0 0 -100px;
+header #hero_img {
   position: absolute;
-  top: 50%;
-  left: 50%; }
+  width: 100%;
+  top: 0; }
+  header #hero_img img {
+    height: 100%;
+    width: 100%; }
+
+header #banner {
+  z-index: 100;
+  height: 20.83333vw;
+  width: 20.83333vw;
+  position: relative;
+  margin: 10.41667vw auto;
+  background-color: rgba(0, 0, 0, 0.26); }
+
+/* NAV .................................................................*/
+nav {
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.26); }
+  nav ul {
+    padding: 0 2.60417vw;
+    height: inherit;
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      height: 3.64583vw;
+      text-transform: uppercase; }
+      nav ul li a {
+        transition: background-color 0.4s ease;
+        font-size: 1.04167vw;
+        height: inherit;
+        display: block;
+        margin: 0vw;
+        padding: 0 0.78125vw;
+        text-align: center;
+        color: #fff;
+        padding-top: 0.98958vw; }
+        nav ul li a:hover {
+          background-color: rgba(255, 255, 255, 0.86);
+          color: #000; }
+    nav ul li:hover {
+      cursor: pointer; }
 
 @font-face {
   font-family: 'Font-Name';
@@ -397,7 +442,6 @@ th {
 
 * {
   box-sizing: border-box;
-  font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
 body {
@@ -407,10 +451,6 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden; }
-
-body, html {
-  min-height: 100vh;
-  overflow: hidden; }
 
 /* FONT STACK */
 .wrapper {

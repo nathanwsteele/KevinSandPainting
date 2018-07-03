@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
   
@@ -12,10 +11,7 @@
     margin: 0;
     overflow-x:hidden;
   }
-  body,html{
-      min-height: 100vh;
-      overflow: hidden;
-  }
+
   
 
 /* FONT STACK */

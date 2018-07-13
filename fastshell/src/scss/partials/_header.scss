@@ -3,28 +3,32 @@ header {
     @include desktop ((
       position:absolute,
       width:100%,
-      top:0
+      top:0,
+      z-index:-9999
     ));
    
     img {
-      height:100%;
-      width:100%;
+      @include desktop ((
+        width:100%
+      ))
     }
   }
   #overlay {
     @include desktop ((
       position:absolute,
       width:100%,
-      height:100%,
       top:0,
-      background-color:$black_transparent 
+      background-color:$black_transparent,
+      height:1140px,
+      z-index:-200
     ));
   }
+
   #banner {
     @include desktop ((
       z-index:100,
-      height:inherit,
-      width:800px,
+      height:650px,
+      width:auto,
       position:relative,
       padding:30px,
       margin:200px auto

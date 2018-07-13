@@ -13,6 +13,7 @@
 @import 'modules/_vars.scss';
 @import 'modules/_clearfix.scss';
 @import 'modules/_normalize.scss';
+@import 'modules/_classes.scss';
 //----------------------------------*\
 // PARTIALS
 //----------------------------------*/
@@ -23,14 +24,11 @@
 @import 'partials/_main.scss';
 @import 'partials/_footer.scss';
 
+
 //----------------------------------*\
 // OBJECTS & MODULES
 //----------------------------------*/
-
-@import 'modules/_buttons.scss';
-@import 'modules/_lists.scss';
 @import 'modules/_typography.scss';
-@import 'modules/_misc.scss';
 @import 'modules/_app.scss';
 
 // Enhancement modules

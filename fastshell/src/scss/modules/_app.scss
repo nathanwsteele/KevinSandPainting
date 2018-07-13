@@ -4,40 +4,39 @@
   }
   
   body {
-    font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
     color: #444;
     transition: all .4s .3s ease-in;
     padding: 0;
     margin: 0;
     overflow-x:hidden;
+    font-family: $condensed;
   }
 
   
 
 /* FONT STACK */
-$regular:'Open Sans', sans-serif;
-$condensed:'Open Sans Condensed', sans-serif;
 
-.wrapper {
-    margin:0 auto;
-    width:90%;
-    max-width:1600px;  
+
+h1,
+h2 {
+    font-family: 'Cinzel', serif;
 }
 h1 {
-    font-size: 50px;
-    margin-bottom: 45px;
-    text-align: center;
-    font-family: $condensed;
+    text-shadow:$text_shadow;
+    @include desktop ((
+        font-size: 80px,
+        margin-bottom: 5px,
+        text-align: center,
+       
+    ))
 }
-h1:after {
-    content: ' ';
-    display: block;
-    margin: 9px auto;
-    width: 100px;
-}
+
 h2 {
-    font-size: 2.2em;
-    font-family: $condensed;
+    text-shadow:$text_shadow;
+    @include desktop ((
+        font-size: 45px,
+        color:$white
+    ))
 }
 h3 {
     font-size: 2em;
@@ -51,7 +50,13 @@ h5 {
 h6 {
     font-size: 1.25em;
 }
-
+p {
+    @include desktop ((
+        font-size: 27px,
+        font-family:$condensed,
+        color:$black
+    ))
+}
 
 a,
 a:hover,

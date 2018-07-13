@@ -362,25 +362,35 @@ td,
 th {
   padding: 0; }
 
+.gap {
+  margin-bottom: 30px; }
+
+.light-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.center_text {
+  text-align: center; }
+
 header #hero_img {
   position: absolute;
   width: 100%;
-  top: 0; }
+  top: 0;
+  z-index: -9999; }
   header #hero_img img {
-    height: 100%;
     width: 100%; }
 
 header #overlay {
   position: absolute;
   width: 100%;
-  height: 100%;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 59.375vw;
+  z-index: -200; }
 
 header #banner {
   z-index: 100;
-  height: inherit;
-  width: 41.66667vw;
+  height: 33.85417vw;
+  width: auto;
   position: relative;
   padding: 1.5625vw;
   margin: 10.41667vw auto; }
@@ -394,7 +404,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.4); }
   nav ul {
     padding: 0 2.60417vw;
     height: inherit;
@@ -422,6 +432,21 @@ nav {
     nav ul li:hover {
       cursor: pointer; }
 
+#content {
+  z-index: 2;
+  min-height: 41.66667vw;
+  background-color: #fff;
+  padding: 2.60417vw;
+  margin: 0 auto; }
+
+.wrapper {
+  margin: 0 auto;
+  background-color: #fff;
+  width: 85%; }
+
+footer {
+  margin: 0 auto; }
+
 @font-face {
   font-family: 'Font-Name';
   src: url("../fonts/font-name.eot");
@@ -429,59 +454,33 @@ nav {
   font-weight: normal;
   font-style: normal; }
 
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::-webkit-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
 * {
   box-sizing: border-box;
   text-rendering: optimizeLegibility; }
 
 body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
   color: #444;
   transition: all .4s .3s ease-in;
   padding: 0;
   margin: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Open Sans Condensed", sans-serif; }
 
 /* FONT STACK */
-.wrapper {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1600px; }
+h1,
+h2 {
+  font-family: 'Cinzel', serif; }
 
 h1 {
-  font-size: 50px;
-  margin-bottom: 45px;
-  text-align: center;
-  font-family: "Open Sans Condensed", sans-serif; }
-
-h1:after {
-  content: ' ';
-  display: block;
-  margin: 9px auto;
-  width: 100px; }
+  text-shadow: 1px 1px 4px #000;
+  font-size: 4.16667vw;
+  margin-bottom: 0.26042vw;
+  text-align: center; }
 
 h2 {
-  font-size: 2.2em;
-  font-family: "Open Sans Condensed", sans-serif; }
+  text-shadow: 1px 1px 4px #000;
+  font-size: 2.34375vw;
+  color: #fff; }
 
 h3 {
   font-size: 2em; }
@@ -494,6 +493,11 @@ h5 {
 
 h6 {
   font-size: 1.25em; }
+
+p {
+  font-size: 1.40625vw;
+  font-family: "Open Sans Condensed" sans-serif;
+  color: #000; }
 
 a,
 a:hover,

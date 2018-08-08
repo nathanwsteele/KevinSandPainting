@@ -363,13 +363,44 @@ th {
   padding: 0; }
 
 .gap {
-  margin-bottom: 30px; }
+  margin-bottom: 3.125vw; }
 
 .light-shadow {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 .center_text {
   text-align: center; }
+
+.center {
+  margin: 0 auto;
+  display: block; }
+
+.box {
+  padding: 1.04167vw; }
+
+.flex_row {
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex_column {
+  -ms-flex: 1;
+      flex: 1; }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 17.1875vw;
+  padding: 0.52083vw;
+  color: #fff; }
+
+.interior {
+  background-image: url("/assets/img/interior_home_sm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.exterior {
+  background-image: url("/assets/img/exterior_home_sm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 header #hero_img {
   position: absolute;
@@ -483,7 +514,7 @@ h2 {
   color: #fff; }
 
 h3 {
-  font-size: 2em; }
+  font-size: 1.5625vw; }
 
 h4 {
   font-size: 1.75em; }
@@ -508,6 +539,10 @@ hr {
   width: 100%;
   border-top: solid 1px #ababab;
   display: none; }
+
+li {
+  font-size: 1.04167vw;
+  font-family: "Open Sans Condensed" sans-serif; }
 
 /* ......Custom styles ................*/
 a {

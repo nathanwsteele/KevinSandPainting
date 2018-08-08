@@ -39,7 +39,9 @@ h2 {
     ))
 }
 h3 {
-    font-size: 2em;
+    @include desktop ((
+        font-size: 30px
+    ));
 }
 h4 {
     font-size: 1.75em;
@@ -55,7 +57,7 @@ p {
         font-size: 27px,
         font-family:$condensed,
         color:$black
-    ))
+    ));
 }
 
 a,
@@ -68,6 +70,12 @@ hr {
     width:100%;
     border-top: solid 1px #ababab;
     display:none;
+}
+li {
+    @include desktop ((
+        font-size: 20px,
+        font-family:$condensed
+    ));
 }
 /* ......Custom styles ................*/
 

@@ -365,7 +365,10 @@ th {
 .gap {
   margin-bottom: 3.125vw; }
 
-.light-shadow {
+.pad {
+  padding: 5.20833vw; }
+
+.light-shadow, .box {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 .center_text {
@@ -387,20 +390,37 @@ th {
       flex: 1; }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 17.1875vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 19.79167vw;
   padding: 0.52083vw;
   color: #fff; }
 
-.interior {
-  background-image: url("/assets/img/interior_home_sm.jpg");
+.interior,
+.exterior {
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.interior {
+  background-image: url("/assets/img/interior_home_sm.jpg"); }
 
 .exterior {
-  background-image: url("/assets/img/exterior_home_sm.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("/assets/img/exterior_home_sm.jpg"); }
+
+.button {
+  width: 10.41667vw;
+  height: inherit;
+  background-color: #e0e3ff;
+  padding: 1.04167vw;
+  border: 0.05208vw solid #000;
+  color: #000;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .button:hover {
+    background-color: #99a3ff;
+    color: #000; }
 
 header #hero_img {
   position: absolute;
@@ -463,12 +483,14 @@ nav {
     nav ul li:hover {
       cursor: pointer; }
 
-#content {
+#services {
   z-index: 2;
-  min-height: 41.66667vw;
   background-color: #fff;
-  padding: 2.60417vw;
+  padding: 5.20833vw;
   margin: 0 auto; }
+
+#gallery {
+  background-color: #e0e3ff; }
 
 .wrapper {
   margin: 0 auto;
@@ -541,7 +563,7 @@ hr {
   display: none; }
 
 li {
-  font-size: 1.04167vw;
+  font-size: 1.30208vw;
   font-family: "Open Sans Condensed" sans-serif; }
 
 /* ......Custom styles ................*/

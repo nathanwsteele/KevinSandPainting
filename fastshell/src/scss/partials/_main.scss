@@ -1,14 +1,15 @@
-#content {  
+
+#services {  
     @include desktop ((
         z-index:2,
-        min-height:800px,
         background-color:$white,
-        padding:50px,
+        padding:100px,
         margin:0 auto
     ));
-    
 }
-
+#gallery {
+    background-color:$accent;
+}
 .wrapper {
     @include desktop ((
         margin:0 auto,

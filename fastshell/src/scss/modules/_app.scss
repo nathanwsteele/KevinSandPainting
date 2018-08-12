@@ -73,7 +73,7 @@ hr {
 }
 li {
     @include desktop ((
-        font-size: 20px,
+        font-size: 25px,
         font-family:$condensed
     ));
 }

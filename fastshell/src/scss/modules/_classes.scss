@@ -1,6 +1,12 @@
+@import 'vars.scss';
 .gap {
     @include desktop ((
         margin-bottom: 60px
+    ));
+}
+.pad {
+    @include desktop ((
+        padding:100px
     ));
 }
 .light-shadow {
@@ -14,6 +20,7 @@
     display:block;
 }
 .box {
+    @extend .light-shadow;
     @include desktop ((
         padding:20px
     ));
@@ -25,22 +32,42 @@
     flex: 1;
 }
 .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     @include desktop ((
-       height:330px,
+       height:380px,
        padding:10px,
        color:$white
     ));
 }
+.interior,
+.exterior {
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
 
 .interior {
     background-image:url('/assets/img/interior_home_sm.jpg');
-    background-size:cover;
-    background-repeat:no-repeat;
-
 }
 .exterior {
     background-image:url('/assets/img/exterior_home_sm.jpg');
-    background-size:cover;
-    background-repeat:no-repeat;
+}
+
+.button {
+   @include desktop ((
+       width:200px,
+       height:inherit,
+       background-color:$accent,
+       padding:20px,
+       border:1px solid #000,
+       color:$black,
+       display:block,
+       text-align:center,
+       font-weight:bold,
+       text-transform:uppercase
+   ));
+   &:hover {
+       background-color:$accent_2;
+       color:$black;
+   }
 }

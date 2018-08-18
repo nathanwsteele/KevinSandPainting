@@ -3,3 +3,10 @@ footer {
         margin:0 auto
     ));
 }
+
+#map iframe {
+    @include desktop ((
+        width:100%,
+        height:400px
+    ));
+}

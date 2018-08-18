@@ -8,12 +8,11 @@
     ));
 }
 #gallery {
-    background-color:$accent;
+    background-color:$black;
 }
 .wrapper {
     @include desktop ((
         margin:0 auto,
-        background-color:$white,
         width:85%
     ));
 }

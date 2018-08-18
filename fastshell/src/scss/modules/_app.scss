@@ -17,8 +17,8 @@
 /* FONT STACK */
 
 
-h1,
-h2 {
+
+* {
     font-family: 'Cinzel', serif;
 }
 h1 {
@@ -40,46 +40,64 @@ h2 {
 }
 h3 {
     @include desktop ((
-        font-size: 30px
+        font-size: 40px
     ));
 }
 h4 {
-    font-size: 1.75em;
+    @include desktop ((
+        font-size: 35px
+    ));
 }
 h5 {
-    font-size: 1.5em;
+    @include desktop ((
+        font-size: 30px
+    ));
 }
 h6 {
-    font-size: 1.25em;
+    @include desktop ((
+        font-size: 28px
+    ));
 }
 p {
     @include desktop ((
         font-size: 27px,
-        font-family:$condensed,
-        color:$black
+        color:$black,
+        margin-bottom:5px
     ));
 }
 
 a,
 a:hover,
 a:focus {
-    text-decoration: none;
+    @include desktop ((
+        text-decoration: none,
+        font-size:20px
+    ));
+    
 }
 
 hr {
-    width:100%;
-    border-top: solid 1px #ababab;
-    display:none;
+    @include desktop ((
+        width:100%,
+        border-top: solid 1px #ababab,
+        display:none
+    ));
 }
 li {
     @include desktop ((
-        font-size: 25px,
-        font-family:$condensed
+        font-size: 25px
     ));
 }
-/* ......Custom styles ................*/
+
 
 
 a {
     cursor:pointer;
+}
+section,
+footer {
+    @include desktop ((
+        padding-top:80px,
+        padding-bottom:80px
+    ));
 }

@@ -15,5 +15,8 @@
         margin:0 auto,
         width:85%
     ));
+    @include phone ((
+        width:100%
+    ));
 }
 

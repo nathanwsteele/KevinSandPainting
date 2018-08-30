@@ -17,6 +17,72 @@
     <link href="assets/css/style.min.css" rel="stylesheet">
     <script src="assets/components/jquery/jquery.min.js"></script>
     <!-- <script src="assets/components/modernizr/modernizr.js"></script> -->
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Service",
+          "serviceType": "Commercial and Residential Painting",
+          "name": "Kevin Sand Painting",
+          "brand": "Kevin Sand Painting",
+          "url": "https://kevinsandpainting.com/",
+          "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "+12623053153",
+            "contactType": "customer service"
+          }],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "625 North Sauk Drive",
+            "addressLocality": "Port Washington",
+            "addressRegion": "WI",
+            "postalCode": "53074",
+            "addressCountry": "US"
+          },
+            "member": [
+                {
+                    "@type":"OrganizationRole",
+                    "member": {
+                    "@type":"Person",
+                    "name":"Kevin Sand"
+                    },
+                    "roleName":"Owner"
+                }
+            ]
+        } </script>
+
+    <script type=application/ld+json> {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "contactPoint",
+            "url": "https://kevinsandpainting.com/"
+        } </script>
+
+    <script type=application/ld+json> {
+            "@context": "http://schema.org",
+            "@type": "Thing",
+            "url": "https://kevinsandpainting.com/",
+            "name": "Kevin Sand Painting, WI - Commercial and Residential Painting",
+            "description": "Kevin Sand Painting offers commercial and residential painting services in Southeastern Wisconsin."
+        } </script>
+    <script type=application/ld+json> {
+            "@context": "http://schema.org",
+            "@type": "Place",
+            "geo": {
+                "@type":"GeoCoordinates",
+                "latitude":"43.394241",
+                "longitude":"-87.880411"
+            },
+            "name": "Kevin Sand Painting"
+        } </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125001318-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-125001318-1');
+    </script>
 </head>
 
 <body>
@@ -33,9 +99,9 @@
     <section id="services">
         <div class="wrapper">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="col-md-10 offset-md-1 light-shadow pad interior">
-                        <div class="overlay">
+                <div class="col-md-6 col-xs-12 gap">
+                    <div class="col-md-10 offset-md-1 col-xs-12 col-xs-offset-0 light-shadow pad interior">
+                        <div class="overlay pad">
                             <h3>Interior Painting</h3>
                             <ul>
                                 <li>Woodwork</li>
@@ -50,9 +116,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="col-md-10 offset-md-1 light-shadow pad exterior">
-                        <div class="overlay">
+                <div class="col-md-6 col-xs-12">
+                    <div class="col-md-10 offset-md-1 col-xs-12 col-xs-offset-0 light-shadow pad exterior">
+                        <div class="overlay pad">
                             <h3>Exterior</h3>
                             <ul>
                                 <li>Power Washing</li>
@@ -202,7 +268,7 @@
     <section id="contact">
         <div class="wrapper">
             <div class="row justify-content-md-center">
-                <div class="col-md-10 light-shadow contact_bg gap">
+                <div class="col-md-10 col-xs-12 light-shadow contact_bg gap">
                     <div class="row text-center">
                         <div class="col-md-6 offset-md-3">
                             <div class="pad">
@@ -213,8 +279,11 @@
                                         <p>53074</p>
                                     </address>
                                     <p>(262) 305-3153</p>
-                                    <a href="tel:+12623053153" class="button center">Call Kevin!</a>
+                                    <hr>
                                     <p class="center_text headline">Fully Insured</p>
+                                    <hr>
+                                    <a href="tel:+12623053153" class="button center">Call Kevin!</a>
+
                                 </div>
                             </div>
                         </div>
@@ -236,11 +305,14 @@
                     <div class="splash">
                         <img src="assets/img/green_brush.png" class="center">
                     </div>
-                    <p class="center_text">Kevin Sand &copy;
-                        <span id="current_year">
-                        </span> - All Rights Reserved.</p>
+
                 </div>
             </div>
+        </div>
+        <div id="footer_band">
+            <p class="center_text">Kevin Sand &copy;
+                <span id="current_year">
+                </span> - All Rights Reserved.</p>
         </div>
     </footer>
 </body>

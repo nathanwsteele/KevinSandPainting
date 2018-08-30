@@ -367,6 +367,9 @@ th {
 
 .pad {
   padding: 2.08333vw; }
+  @media (max-width: 640px) {
+    .pad {
+      padding: 3.125vw; } }
 
 .light-shadow {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
@@ -404,7 +407,11 @@ th {
   background-position: center; }
   .interior .overlay,
   .exterior .overlay {
-    height: 19.79167vw; }
+    height: 22.39583vw; }
+    @media (max-width: 640px) {
+      .interior .overlay,
+      .exterior .overlay {
+        height: 81.25vw; } }
 
 .interior {
   background-image: url("/assets/img/interior_home_sm.jpg"); }
@@ -415,7 +422,7 @@ th {
 .button {
   width: 15.625vw;
   height: inherit;
-  background-color: #0f0f0f;
+  background-color: #215ba5;
   padding: 1.04167vw;
   margin-top: 1.5625vw;
   margin-bottom: 1.5625vw;
@@ -426,14 +433,21 @@ th {
   font-weight: bold;
   text-transform: uppercase; }
   .button:hover {
-    background-color: #404144;
+    background-color: #4893f3;
     color: #fff; }
+  @media (max-width: 640px) {
+    .button {
+      width: 59.375vw;
+      padding: 6.25vw;
+      margin-top: 9.375vw;
+      margin-bottom: 9.375vw;
+      border: 0.3125vw solid #000; } }
 
 .headline {
   font-size: 2.60417vw; }
-
-.splash img {
-  width: 20.83333vw; }
+  @media (max-width: 640px) {
+    .headline {
+      font-size: 6.25vw; } }
 
 header #hero_img {
   position: absolute;
@@ -508,13 +522,36 @@ nav {
 .wrapper {
   margin: 0 auto;
   width: 85%; }
+  @media (max-width: 640px) {
+    .wrapper {
+      width: 100%; } }
 
 footer {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0; }
+  footer #footer_band {
+    position: relative;
+    bottom: 0;
+    background-color: #0f0f0f;
+    margin: 0 auto;
+    height: inherit;
+    padding: 1.5625vw; }
+    footer #footer_band *, footer #footer_band p, footer #footer_band span {
+      color: #fff;
+      font-family: "Cinzel", serif;
+      margin-bottom: 0; }
+  footer .splash img {
+    width: 20.83333vw; }
+    @media (max-width: 640px) {
+      footer .splash img {
+        width: 62.5vw; } }
 
 #map iframe {
   width: 100%;
   height: 20.83333vw; }
+  @media (max-width: 640px) {
+    #map iframe {
+      height: 93.75vw; } }
 
 @font-face {
   font-family: 'Font-Name';
@@ -537,21 +574,32 @@ body {
 
 /* FONT STACK */
 * {
-  font-family: 'Cinzel', serif; }
+  font-family: "Cinzel", serif; }
 
 h1 {
   text-shadow: 1px 1px 4px #000;
   font-size: 4.16667vw;
   margin-bottom: 0.26042vw;
   text-align: center; }
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 7.5vw;
+      margin-bottom: 1.5625vw; } }
 
 h2 {
   text-shadow: 1px 1px 4px #000;
   font-size: 2.34375vw;
   color: #fff; }
+  @media (max-width: 640px) {
+    h2 {
+      font-size: 5vw; } }
 
 h3 {
   font-size: 2.08333vw; }
+  @media (max-width: 640px) {
+    h3 {
+      font-size: 5.625vw;
+      text-align: center; } }
 
 h4 {
   font-size: 1.82292vw; }
@@ -565,13 +613,25 @@ h6 {
 p {
   font-size: 1.40625vw;
   color: #0f0f0f;
-  margin-bottom: 0.26042vw; }
+  margin-bottom: 0.26042vw;
+  font-family: "Open Sans Condensed" sans-serif; }
+  @media (max-width: 640px) {
+    p {
+      font-size: 5vw;
+      margin-bottom: 1.5625vw; } }
 
 a,
 a:hover,
 a:focus {
   text-decoration: none;
-  font-size: 1.04167vw; }
+  font-size: 1.04167vw;
+  font-family: "Open Sans Condensed" sans-serif; }
+  @media (max-width: 640px) {
+    a,
+    a:hover,
+    a:focus {
+      text-decoration: none;
+      font-size: 5.625vw; } }
 
 hr {
   width: 100%;
@@ -579,15 +639,23 @@ hr {
   display: none; }
 
 li {
-  font-size: 1.30208vw; }
+  font-size: 1.30208vw;
+  font-family: "Open Sans Condensed" sans-serif; }
+  @media (max-width: 640px) {
+    li {
+      font-size: 4.6875vw; } }
 
 a {
   cursor: pointer; }
 
-section,
-footer {
+section {
   padding-top: 4.16667vw;
   padding-bottom: 4.16667vw; }
+
+hr {
+  border-top: 1px groove #fff;
+  width: 100%;
+  display: block; }
 
 @media print {
   * {

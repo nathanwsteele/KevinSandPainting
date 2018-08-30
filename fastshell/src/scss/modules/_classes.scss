@@ -8,6 +8,9 @@
     @include desktop ((
         padding:40px
     ));
+    @include phone ((
+        padding:10px
+    ));
 }
 .light-shadow {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
@@ -49,7 +52,10 @@
     background-position: center;
     .overlay {
         @include desktop ((
-            height:380px
+            height:430px
+         ));
+         @include phone ((
+            height:260px
          ));
     }
 }
@@ -65,7 +71,7 @@
    @include desktop ((
        width:300px,
        height:inherit,
-       background-color:$black,
+       background-color:$accent_blue,
        padding:20px,
        margin-top:30px,
        margin-bottom:30px,
@@ -77,17 +83,23 @@
        text-transform:uppercase
    ));
    &:hover {
-       background-color:$accent;
+       background-color:$accent_blue_lighter;
        color:$white;
    }
+   @include phone ((
+    width:190px,
+    padding:20px,
+    margin-top:30px,
+    margin-bottom:30px,
+    border:1px solid #000
+));
 }
 .headline {
     @include desktop ((
         font-size:50px
     ));
-}
-.splash img {
-    @include desktop ((
-        width:400px
+    @include phone ((
+        font-size:20px
     ));
 }
+

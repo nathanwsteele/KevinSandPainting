@@ -19,7 +19,7 @@
 
 
 * {
-    font-family: 'Cinzel', serif;
+    font-family: $regular;
 }
 h1 {
     text-shadow:$text_shadow;
@@ -28,7 +28,11 @@ h1 {
         margin-bottom: 5px,
         text-align: center,
        
-    ))
+    ));
+    @include phone ((
+        font-size: 24px,
+        margin-bottom: 5px
+    ));
 }
 
 h2 {
@@ -36,11 +40,18 @@ h2 {
     @include desktop ((
         font-size: 45px,
         color:$white
+    ));
+    @include phone ((
+        font-size: 16px
     ))
 }
 h3 {
     @include desktop ((
         font-size: 40px
+    ));
+    @include phone ((
+        font-size: 18px,
+        text-align:center
     ));
 }
 h4 {
@@ -62,6 +73,11 @@ p {
     @include desktop ((
         font-size: 27px,
         color:$black,
+        margin-bottom:5px,
+        font-family:$condensed
+    ));
+    @include phone ((
+        font-size: 16px,
         margin-bottom:5px
     ));
 }
@@ -71,7 +87,12 @@ a:hover,
 a:focus {
     @include desktop ((
         text-decoration: none,
-        font-size:20px
+        font-size:20px,
+        font-family:$condensed
+    ));
+    @include phone ((
+        text-decoration: none,
+        font-size:18px
     ));
     
 }
@@ -85,19 +106,25 @@ hr {
 }
 li {
     @include desktop ((
-        font-size: 25px
+        font-size: 25px,
+        font-family:$condensed
+    ));
+    @include phone ((
+        font-size: 15px
     ));
 }
-
-
 
 a {
     cursor:pointer;
 }
-section,
-footer {
+section {
     @include desktop ((
         padding-top:80px,
         padding-bottom:80px
     ));
+}
+hr {
+    border-top:1px groove $white;
+    width:100%;
+    display:block;
 }
